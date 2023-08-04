@@ -20,7 +20,6 @@ const TabBarItem: React.FC<TabBarItemProps> = (props) => {
 
     const animatedActiveIndex = useSharedValue(activeIndex);
     const iconPosition = getPathXCenterByIndex(curvedPaths, index);
-    const labelPosition = getPathXCenterByIndex(curvedPaths, index);
     const iconColor = useSharedValue(
         activeIndex === index + 1 ? 'white' : 'rgba(128,128,128,0.8)',
     );
@@ -38,16 +37,7 @@ const TabBarItem: React.FC<TabBarItemProps> = (props) => {
             ]
         }
     })
-    const labelContainerStyle = useAnimatedStyle(() => {
-        const translateY = animatedActiveIndex.value - 1 === index ? 36 : 100;
-        return {
-            transform: [
-                { translateY: withTiming(translateY) },
-                { translateX: labelPosition - LABEL_WIDTH / 4 },
-            ],
-        };
-    });
-
+    
     useEffect(() => {
         animatedActiveIndex.value = activeIndex;
         if (activeIndex === index + 1) {
@@ -80,10 +70,6 @@ const TabBarItem: React.FC<TabBarItemProps> = (props) => {
 
                 </Pressable>
 
-            </Animated.View>
-
-            <Animated.View style={[labelContainerStyle, styles.labelContainer]}>
-                <Text style={styles.label}>{label}</Text>
             </Animated.View>
         </>
     )

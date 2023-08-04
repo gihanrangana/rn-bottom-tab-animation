@@ -42,6 +42,7 @@ const usePath = () => {
 
     const curvedPaths = useMemo(() => {
         return Array.from({ length: NUM_TABS }, (_, index) => {
+            
             const tabShapePath = generateTabShapePath(index + 0.5, adjustedHeight);
             return parse(`${tabShapePath}`);
         });
