@@ -1,0 +1,11 @@
+.tabBarContainer {
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+}
+
+.tabItemsContainer {
+    position: absolute;
+    flex-direction: row;
+    width: 100%;
+}
