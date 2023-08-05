@@ -15,3 +15,18 @@ export const getPathXCenterByIndex = (tabPaths: any[], index: number) => {
   const centerX = (startPoint.x + endPoint.x) / 2;
   return centerX;
 };
+
+export const getIcon = (route: string) => {
+  switch (route) {
+      case "Products":
+          return "home"
+      case "Cart":
+          return "shopping-bag"
+      case "Favorites":
+          return "star"
+      case "Profile":
+          return "user"
+      default:
+          return "home"
+  }
+}

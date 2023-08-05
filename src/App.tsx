@@ -2,10 +2,11 @@ import { StatusBar } from 'expo-status-bar';
 import { SafeAreaView, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import AnimationOne from './screens/AnimationOne';
+
+import AnimationOne from './screens/AnimationOne/AnimationOne';
+import AnimationTwo from './screens/AnimationTwo/AnimationTwo';
 
 import styles from './App.scss';
-import AnimationTwo from './screens/AnimationTwo/AnimationTwo';
 
 export default function App() {
 
@@ -17,8 +18,8 @@ export default function App() {
 			<StatusBar style="dark" />
 			<NavigationContainer>
 				<Stack.Navigator>
-					{/* <Stack.Screen name='AnimationOne' component={AnimationOne} /> */}
-					<Stack.Screen name='AnimationTwo' component={AnimationTwo} />
+					<Stack.Screen name='AnimationOne' component={AnimationOne} />
+					{/* <Stack.Screen name='AnimationTwo' component={AnimationTwo} /> */}
 				</Stack.Navigator>
 			</NavigationContainer>
 		</>
