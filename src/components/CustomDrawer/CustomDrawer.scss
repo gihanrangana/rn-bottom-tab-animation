@@ -1,0 +1,61 @@
+.drawerContainer {
+    flex: 1;
+    background-color: $darkBg1;
+    // width: 100%;
+    // overflow: hidden;
+}
+
+.userArea {
+    flex-direction: row;
+    margin-top: 20;
+    margin-left: 20;
+    align-items: center;
+    // width: 100%;
+    overflow: hidden;
+}
+
+.name {
+    font-family: "Roboto_500Medium";
+    font-size: 22px;
+    margin-left: 10px;
+    color: white;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.username {
+    font-family: "Roboto_400Regular";
+    margin-left: 10px;
+    font-size: 13px;
+    color: $light1;
+}
+
+.avatarContainer {
+    border-radius: 50px;
+    overflow: hidden;
+    background-color: $primary;
+    width: 70px;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid white;
+}
+
+.avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.logout {
+    background-color: $primaryDark;
+    width: 120;
+    padding: 8px 20px;
+    flex-direction: row;
+    gap: 10;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20;
+    margin-left: 20;
+    border-radius: 5px;
+}

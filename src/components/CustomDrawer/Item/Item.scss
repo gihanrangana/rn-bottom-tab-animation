@@ -1,0 +1,19 @@
+.item {
+    background-color: $darkBg2;
+}
+
+.itemActive {
+    background-color: $primary;
+}
+
+.label {
+    font-size: 16px;
+    font-family: "Roboto_400Regular";
+    color: white;
+}
+
+.labelActive {
+    @extend .label;
+    font-family: "Roboto_700Bold";
+    color: white;
+}

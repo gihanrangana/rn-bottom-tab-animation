@@ -45,7 +45,7 @@ const TabItem: React.FC<TabItemProps> = (props) => {
 
     const labelStyle = useAnimatedStyle(() => {
 
-        labelPosition.value = isActive ? 30 : 100
+        labelPosition.value = isActive ? 35 : 100
         labelOpacity.value = isActive ? 1 : 0
         labelColor.value = isActive ? "rgba(206, 132, 48,1)" : "rgba(128,128,128,1)"
 

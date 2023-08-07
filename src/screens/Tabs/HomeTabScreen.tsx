@@ -7,10 +7,10 @@ const HomeTabScreen: React.FC<HomeTabScreenProps> = (props) => {
         <View style={{
             alignItems: "center",
             justifyContent: "center",
-            backgroundColor: "#88AFFF",
+            backgroundColor: "#66AAFF",
             flex: 1
         }}>
-            <Text>{props.route.name}</Text>
+            <Text style={{ color: "white", fontSize: 24 }}>{props.route.name}</Text>
         </View>
     )
 }
